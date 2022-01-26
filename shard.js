@@ -1,3 +1,4 @@
+const Discord = require('discord.js')
 const { ShardingManager } = require("discord.js");
 const manager = new ShardingManager("./space-giveaway.js", {
     token: '',
