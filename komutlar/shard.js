@@ -17,3 +17,4 @@ Toplam Kullanıcı Sayısı: ${userr}
 Shard Id: ${client.shard.ids} / 2
 `)
 m.channel.send({embeds: [embed]}) 
+}) 
