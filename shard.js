@@ -20,7 +20,7 @@ const shardlog = new Discord.WebhookClient({id: webhook_id, token: webhook_token
 const embed = new Discord.MessageEmbed() 
 .setDescription(`<:sgs_error:921392927568195645> **${i.id} / 2** Id' li Shard' ın bağlantısı kesildi!`)
 .setFooter(`Space Giveaway`, client.user.avatarURL())
-.setColor('GREEN')
+.setColor('RED')
 shardlog.send({embeds: [embed]});
 })
 manager.on('shardReconnecting', async(i) => {
@@ -28,7 +28,7 @@ const shardlog = new Discord.WebhookClient({id: webhook_id, token: webhook_token
 const embed = new Discord.MessageEmbed() 
 .setDescription(`<:sgs_tick:921392926683197460> **${i.id} / 2** Id' li Shard yeniden bağlandı!`)
 .setFooter(`Space Giveaway`, client.user.avatarURL())
-.setColor('GREEN')
+.setColor('#FF7F00')
 shardlog.send({embeds: [embed]});
 })
 manager.spawn();
