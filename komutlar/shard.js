@@ -14,7 +14,7 @@ const embed = new Discord.MessageEmbed()
 **• Genel Bilgiler**
 Toplam Sunucu Sayısı: ${guildd} 
 Toplam Kullanıcı Sayısı: ${userr} 
-Shard Id: ${client.shard.ids} / 2
+Shard Id: ${Number(client.shard.ids)+1} / 2
 `)
 m.channel.send({embeds: [embed]}) 
 }) 
